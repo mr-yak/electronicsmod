@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "electronicsmod:silicon_ore"
+  },
+  "result": "electronicsmod:silicon",
+  "experience": 2,
+  "cookingtime": 200
+}

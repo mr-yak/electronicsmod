@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.yak.electronicsmod.block.ModBlocks;
 import net.yak.electronicsmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -44,6 +45,7 @@ public class electronics
         IEventBus eventbus = FMLJavaModLoadingContext.get().getModEventBus();
         eventbus.addListener(this::setup);
         ModItems.register(eventbus);
+        ModBlocks.register(eventbus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
