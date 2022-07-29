@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.yak.electronicsmod.block.custom.led;
+import net.yak.electronicsmod.block.custom.pin;
 import net.yak.electronicsmod.electronics;
 import net.yak.electronicsmod.item.ModCreativeModeTab;
 import net.yak.electronicsmod.item.ModItems;
@@ -23,25 +24,35 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SILICON_BLOCK = registerBlock("silicon_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
-                    .strength(9f)), ModCreativeModeTab.ELECTRONICS_TAB);
+                    .strength(7f)), ModCreativeModeTab.ELECTRONICS_TAB);
 
 
     public static final RegistryObject<Block> SILICON_ORE = registerBlock("silicon_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.ELECTRONICS_TAB);
 
     public static final RegistryObject<Block> DEEPSLATE_SILICON_ORE = registerBlock("deepslate_silicon_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(7f)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()), ModCreativeModeTab.ELECTRONICS_TAB);
 
 
-    public static final RegistryObject<Block> LED = registerBlock("led",
+    public static final RegistryObject<Block> RED_LED = registerBlock("red_led",
             () -> new led(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
-                    .strength(3f)), ModCreativeModeTab.ELECTRONICS_TAB);
+                    .strength(1f).noOcclusion() ), ModCreativeModeTab.ELECTRONICS_TAB);
 
+    public static final RegistryObject<Block> GREEN_LED = registerBlock("green_led",
+            () -> new led(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
+                    .strength(1f).noOcclusion() ), ModCreativeModeTab.ELECTRONICS_TAB);
 
+    public static final RegistryObject<Block> BLUE_LED = registerBlock("blue_led",
+            () -> new led(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS)
+                    .strength(1f).noOcclusion() ), ModCreativeModeTab.ELECTRONICS_TAB);
+
+    public static final RegistryObject<Block> PIN = registerBlock("pin",
+            () -> new pin(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(2f).noOcclusion() ), ModCreativeModeTab.ELECTRONICS_TAB);
 
 
 

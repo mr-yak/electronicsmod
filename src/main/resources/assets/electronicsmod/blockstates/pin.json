@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "active=false": {
+      "model": "electronicsmod:block/pin"
+    },
+    "active=true": {
+      "model": "electronicsmod:block/pin_high"
+    }
+  }
+}

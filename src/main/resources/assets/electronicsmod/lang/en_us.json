@@ -1,8 +1,12 @@
 {
   "item.electronicsmod.silicon" : "Silicon",
+
   "block.electronicsmod.silicon_block" : "Silicon Block",
   "block.electronicsmod.silicon_ore" : "Silicon Ore",
   "block.electronicsmod.deepslate_silicon_ore" : "Deepslate Silicon Ore",
-  "block.electronicsmod.led": "LED",
+  "block.electronicsmod.red_led": "Red LED",
+  "block.electronicsmod.green_led": "Green LED",
+  "block.electronicsmod.blue_led": "Blue LED",
+
   "itemGroup.electronics_tab": "Electronics"
 }

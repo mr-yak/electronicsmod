@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "electronics_mod:silicon_ore",
-    "electronics_mod:deepslate_silicon_ore"
+    "electronicsmod:silicon_ore",
+    "electronicsmod:deepslate_silicon_ore"
   ]
 }

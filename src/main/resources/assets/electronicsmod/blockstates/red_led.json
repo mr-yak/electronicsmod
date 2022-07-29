@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "electronicsmod:block/red_led"
+    },
+    "lit=true": {
+      "model": "electronicsmod:block/red_led_on"
+    }
+  }
+}
